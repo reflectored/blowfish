@@ -313,7 +313,7 @@ module.exports = {
             a: {
               textDecorationColor: theme("colors.neutral.600 / 1"),
               "&:hover": {
-                color: theme("colors.primary.400 / 1"),
+                color: theme("colors.primary.100 / 1"),
               },
             },
             kbd: {
