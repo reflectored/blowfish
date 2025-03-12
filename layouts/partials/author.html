@@ -28,7 +28,10 @@
       {{ i18n "author.byline_title" | markdownify }}
     </div>
     <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
-      {{ . }}
+      <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/about" title="About">
+            {{ . }}
+      </a>
+      
     </div>
     {{ end }}
     {{ with .Site.Params.Author.bio | markdownify }}
