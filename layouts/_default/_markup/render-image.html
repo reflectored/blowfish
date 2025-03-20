@@ -16,7 +16,7 @@
   {{- end }}
   {{- with $resource }}
     <figure>
-      {{- if or $disableImageOptimization (eq .MediaType.SubType "svg")}}
+      {{- if or $disableImageOptimization (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif")}}
       <img
         class="my-0 rounded-md"
         loading="lazy"
